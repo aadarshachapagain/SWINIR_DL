@@ -12,7 +12,6 @@ This project implements a SwinIR-based image denoising model using PyTorch.
 │   ├── train.py              # Training loop
 │   ├── evaluate.py           # Testing loop + evaluation
 │   ├── dataset_utils.py      # Custom dataset loader
-│   └── visualize.py          # Output images from visualization
 │
 ├── checkpoints/              # Model checkpoints saved here
 ├── datasets/                 # Dataset directory
@@ -47,8 +46,6 @@ datasets/
 Install dependencies:
 ```bash
 pip install torch torchvision einops scikit-image pillow matplotlib
-# OR
-pip install -r requirements.txt
 ```
 
 ## How to Run
@@ -90,7 +87,3 @@ evaluate_model(
 )
 ```
 
-## Credit
-
-- Based on the SwinIR paper (CVPRW 2021): https://arxiv.org/abs/2108.10257
-- Inspired by the official SwinIR repository: https://github.com/JingyunLiang/SwinIR
